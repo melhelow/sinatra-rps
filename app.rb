@@ -10,7 +10,7 @@ moves = ["rock", "paper", "scissors"]
 @comp_moves = moves.sample
 
 if @comp_moves == "rock"
-  @outcome = "ties"
+  @outcome = "tied"
 elsif 
   @comp_moves == "paper"
 @outcome = "lost"
@@ -24,7 +24,7 @@ get("/paper") do
 @comp_moves = moves.sample
 
 if @comp_moves == "paper"
-  @outcome = "ties"
+  @outcome = "tied"
 elsif 
   @comp_moves == "scissors"
 @outcome = "lost"
@@ -38,7 +38,7 @@ get("/scissors") do
   @comp_moves = moves.sample
   
   if @comp_moves == "scissors"
-    @outcome = "ties"
+    @outcome = "tied"
   elsif 
     @comp_moves == "rock"
   @outcome = "lost"
